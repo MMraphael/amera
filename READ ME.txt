@@ -1,0 +1,3 @@
+PARA ABRIR O LOCALHOST DA AMERA
+Utilize o "Open Folder" do Visual Studio Code, abra a pasta "amera";
+Abra o terminal e escreva "node server.js".

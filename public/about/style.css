@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* PRINCIPAL */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url('/img/BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+section{
+  width: 100%;
+  min-height: 1000px;
+}
+
+span{
+  color: #620096;
+}
+
+/*ANIMAÇÕES @ */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeoff {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+      bottom: -100px; /* Começa fora da tela */
+  }
+  100% {
+      bottom: 100%; /* Move para cima */
+  }
+}
+
+/*  IMGLOGO */
+.imglogo {
+  display: flex;
+  padding: 3rem;
+  position: relative;
+  top: -30rem;
+  left: 1rem;
+  animation: fadein 1s ease-in-out;
+}
+
+/*  QUEMSOMOS */
+
+.title{
+  font-size: 2rem;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 4rem;
+  text-decoration: underline #620096 3px;
+  transition: transform 0.5s ease;
+  animation: fadein 2s ease-in-out;
+}
+
+
+.his1 {
+  color: aliceblue;
+  font-size: 1rem;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: fadein 2s ease-in-out;
+}
+
+.his2 {
+  color: aliceblue;
+  font-size: 1rem;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: fadein 3s ease-in-out;
+}
+
+
+/* NAVIGATOR */
+.home{
+  height: 4rem;
+  width: 4rem;
+  background-color: #620096;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin-left: 48%;
+  margin-top: 35%;
+  box-shadow: 0 0 5px;
+  color: #620096;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home:hover{
+  transform: translate(0, -15%);
+  box-shadow: 0 0 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* HARD & SOFT*/
+
+.title2{
+  text-align: center;
+  color: aliceblue;
+  text-decoration: underline #620096 3px;
+  margin-top: 6rem;
+  animation: fadein 3.5s ease-in-out;
+}
+
+.hardlogo{
+  max-width: 7rem;
+  padding: 1rem;
+  margin-left: 16rem;
+  margin-top: 2rem;
+}
+
+.softlogo{
+  max-width: 7rem;
+  padding: 1rem;
+  margin-left: 27rem;
+  margin-top: 2rem;
+}
+
+.hard{
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin-top: 0rem;
+  margin-left: 7%;
+}
+
+.soft{
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin-top: -9rem;
+  margin-left: 62%;
+}
+
+/* PROPS */
+
+.title3{
+  text-align: center;
+  color: aliceblue;
+  text-decoration: underline #620096 3px;
+  margin-top: 6rem;
+}
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; 
+  gap: 20px; /* Espaçamento entre as caixas */
+  margin-top: 6rem;
+}
+
+.box {
+  background-color: transparent;
+  border: 3px solid #620096;
+  color: white;
+  padding: 20px;
+  width: 150px;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* Transição suave */
+  overflow: hidden; /* Para esconder o conteúdo extra */
+  position: relative; /* Para posicionar o conteúdo */
+}
+
+
+.info {
+  max-height: 0; /* Começa escondido */
+  opacity: 0; /* Começa invisível */
+  transition: max-height 0.7s ease, opacity 0.7s ease; /* Transição suave */
+}
+
+.box:hover {
+  transform: translateY(10px); /* Leve movimento para baixo ao passar o mouse */
+}
+
+.box:hover .info {
+  max-height: 250px; /* Altura máxima quando visível */
+  opacity: 1; /* Torna visível */
+}
+
+/* LEMBRANDO */
+hr{
+  margin: 1rem;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-top: 10rem;
+}
+.lembrando1, .lembrando2{
+  font-size: 10px;
+  color: aliceblue;
+  text-align: center;
+  padding: 0.5rem;
+  margin-inline: 15rem;
+  margin-bottom: 1rem;
+}
