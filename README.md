@@ -11,4 +11,6 @@ computadores.
 
 ---> node server.js <---
 
+**OBSERVAÇÃO**
+
 A **AMERA** foi o primeiro projeto realizado, não contém tantas funcionalidades e nem arquitetura de códigos.
